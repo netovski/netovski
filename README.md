@@ -2,15 +2,21 @@
 from Desenvolvedor import netovski
 
 class SobreMim(netovski):
-    nome = "Carlos ou Neto, como preferir!"
-    area = "Desenvolvedor Back-End"
-    local = "São Paulo"
+
+    def __init__(self):
+        super().__init__()
+        self.name = "Carlos ou Neto, como preferir!"
+        self.role = "Software Engineer"
+        self.local = "São Paulo"
 
 class Skills(netovski):
-    linguagens = ["Python, C#, JavaScript, Java"]
-    bibliotecas = ["Matplotlib, Pandas, NumPy, PyAutoGUI"]
-    frameworks = ["ASP.NET Core, FastAPI, Bootstrap, JQuery"]
-    habilidades = ["Github, Git, Bitbucket"]
+
+    def __init__(self):
+        super().__init__()
+        self.linguagens = ["Python, C#, JavaScript, Java"]
+        self.bibliotecas = ["Matplotlib, Pandas, NumPy, PyAutoGUI"]
+        self.frameworks = ["ASP.NET Core, FastAPI, Bootstrap, JQuery"]
+        self.habilidades = ["Github, Git, Bitbucket"]
 
 ```
 
