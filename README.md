@@ -13,10 +13,11 @@ class Skills(netovski):
 
     def __init__(self):
         super().__init__()
-        self.linguagens = ["Python, C#, JavaScript, Java"]
-        self.bibliotecas = ["Matplotlib, Pandas, NumPy, PyAutoGUI"]
+        self.languages = ["Python, C#, JavaScript, Java"]
+        self.libraries = ["Matplotlib, Pandas, NumPy, PyAutoGUI"]
         self.frameworks = ["ASP.NET Core, FastAPI, Bootstrap, JQuery"]
-        self.habilidades = ["Github, Git, Bitbucket"]
+        self.databases = ["MySQL, PostgreSQL, MongoDB, Redis"]
+        self.miscellaneous = ["Github, Git, Bitbucket, Docker"]
 
 ```
 
