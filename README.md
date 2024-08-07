@@ -1,24 +1,42 @@
-```py
-from Desenvolvedor import netovski
+```cs
+using System;
+using System.Collections.Generic;
 
-class SobreMim(netovski):
-
-    def __init__(self):
-        super().__init__()
-        self.name = "Carlos ou Neto, como preferir!"
-        self.role = "Software Engineer"
-        self.local = "São Paulo"
-
-class Skills(netovski):
-
-    def __init__(self):
-        super().__init__()
-        self.languages = ["Python, C#, JavaScript, Java"]
-        self.libraries = ["Matplotlib, Pandas, NumPy, PyAutoGUI"]
-        self.frameworks = ["ASP.NET Core, FastAPI, Bootstrap, JQuery"]
-        self.databases = ["MySQL, PostgreSQL, MongoDB, Redis"]
-        self.miscellaneous = ["Github, Git, Bitbucket, Docker"]
-
+namespace Desenvolvedor
+{
+    public class Netovski
+    {
+        public class SobreMim : Netovski
+        {
+            public string Name { get; set; }
+            public string Role { get; set; }
+            public string Local { get; set; }
+    
+            public SobreMim()
+            {
+                Name = "Carlos ou Neto, como preferir!";
+                Role = "Software Engineer";
+                Local = "São Paulo";
+            }
+        }
+    
+        public class Skills : Netovski
+        {
+            public List<string> Languages { get; set; }
+            public List<string> Frameworks { get; set; }
+            public List<string> Databases { get; set; }
+            public List<string> Miscellaneous { get; set; }
+    
+            public Skills()
+            {
+                Languages = new List<string> { "Python", "C#", "JavaScript", "Java" };
+                Frameworks = new List<string> { "ASP.NET Core", "Blazor", "Bootstrap", "Entity Framework" };
+                Databases = new List<string> { "MySQL", "PostgreSQL", "MongoDB", "SQLite" };
+                Miscellaneous = new List<string> { "Github", "Git", "Bitbucket", "Docker" };
+            }
+        }
+    }
+}
 ```
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=netovski&label=Profile%20views&color=320eb4&style=flat" alt="netovski" /> </p>
